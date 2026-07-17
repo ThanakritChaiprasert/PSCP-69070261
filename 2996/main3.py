@@ -1,7 +1,7 @@
-'''student id'''
-ID: str = input()
+'''id card'''
+ID_CARD: str = input()
 
-if ID.isdigit():
+if ID_CARD.isdigit():
     COUNT = len(str(ID))
     if COUNT == 13:
         print('yes')
