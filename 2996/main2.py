@@ -1,11 +1,11 @@
 '''student id'''
-id: str = input()
+STU_ID: str = input()
 
 if id.isdigit():
-    count = len(str(id))
-    if count == 8 and id[2:4] == '16':
+    COUNT = len(str(STU_ID))
+    if COUNT == 8 and id[2:4] == '16':
         print('yes')
     else:
-            print('no')
+        print('no')
 else:
     print('no')
