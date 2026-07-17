@@ -1,6 +1,6 @@
 '''name'''
-name = input()
-lastname = input()
+name: str = input()
+lastname: str = input()
 
-print(f"Hello {name} {lastname}")
-print(f"{name[:2]}{lastname[:2]}")
+print('Hello',name,lastname)
+print(name[:2],lastname[:2])
