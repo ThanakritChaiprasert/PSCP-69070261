@@ -2,4 +2,4 @@
 WORD = input()
 COUNT = len(str(WORD))
 if COUNT == 5:
-    print(WORD[::-1])
+    print(WORD.lower()[::-1])
