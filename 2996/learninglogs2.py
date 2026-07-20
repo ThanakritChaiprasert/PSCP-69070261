@@ -1,11 +1,12 @@
 '''Colors'''
 color = input()
-color_mix = color + input()
-if color_mix in ['RedYellow', 'YellowRed']:
+color2 = input()
+color_mix = color + color2
+if color_mix in ['RedYellow']:
     print('Orange')
-elif color_mix in ['RedBlue', 'BlueRed']:
+elif color_mix in ['RedBlue']:
     print('Purple')
-elif color_mix in ['YellowBlue', 'BlueYellow']:
+elif color_mix in ['YellowBlue']:
     print('Green')
 else:
     print('Error')
