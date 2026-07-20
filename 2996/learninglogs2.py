@@ -1,11 +1,14 @@
 '''Colors'''
 color = input()
 color_mix = color + input()
-if color_mix in ['RedYellow', 'YellowRed']:
-    print('Orange')
-elif color_mix in ['RedBlue', 'BlueRed']:
-    print('Violet')
-elif color_mix in ['YellowBlue', 'BlueYellow']:
-    print('Green')
-else:
-    print('Error')
+color_mixLower = color_mix.lower()
+if color_mix  == '':
+    if color_mixLower in ['redyellow', 'yellowred']:
+        print('Orange')
+    elif color_mixLower in ['redblue', 'bluered']:
+        print('Violet')
+    elif color_mixLower in ['yellowblue', 'blueyellow']:
+        print('Green')
+    else:
+        print('Error')
+print(color)
