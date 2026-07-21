@@ -1,7 +1,7 @@
 '''id card'''
-ID_CARD: str = input()
+ID: str = input()
 
-if ID_CARD.isdigit():
+if ID.isdigit():
     COUNT = len(str(ID))
     if COUNT == 13:
         print('yes')
