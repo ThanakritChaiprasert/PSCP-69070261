@@ -15,25 +15,25 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3036 /  ปราสาท
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+565989
 ```
 
 OJ status:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 Independent time spent on this problem:
 
 ```text
-
+30 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+Theres a treasure in Room1 inside a pyramid-shaped castle. All rooms are triangle-shaped and they're stacked on top of each other to form a pyramid. Starting from each room, you have to break the walls to reach Room1. You must code a program to find the least amount of walls to break to reach Room1 from a given room.
 ```
 
 ---
@@ -93,9 +93,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1: Find the pattern in each room number.
+Step 2: Find the difference between odd and even numbers.
+Step 3: Set the minimum and maximum room number to separate each layer.
 ```
 
 ---
@@ -115,7 +115,13 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+1. Use mod to find odd or even number from the given room.
+2. Calculate minimun and maximum room number by using loop variable determined by the number of layers this pyramid has.
+3. Using the found pattern from the fewest possible broken walls from each room, I can separate how odd and even room number works.
+   Odd = +3, Even = +1, then they switch between each other and repeat. Making sure each of them have separate results.
+4. Calculate how many layers the pyramid has using the given room with minimum and maximum room number.
+5. Compare the number of layers with loop variable, ending the loop when the loop variable is more than it.
+6. If the given room number is odd, show the calculated odd value. If the given room number is even, show the calculated even value.
 ```
 
 ---
@@ -135,31 +141,31 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+To check odd room number's result
 ```
 
 Input:
 
 ```text
-
+11
 ```
 
 Expected output:
 
 ```text
-
+5
 ```
 
 Actual output:
 
 ```text
-
+5
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +173,31 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+To check even room number's result
 ```
 
 Input:
 
 ```text
-
+12
 ```
 
 Expected output:
 
 ```text
-
+6
 ```
 
 Actual output:
 
 ```text
-
+6
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +205,31 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+To check if room number 1 has no required broken walls
 ```
 
 Input:
 
 ```text
-
+1
 ```
 
 Expected output:
 
 ```text
-
+0
 ```
 
 Actual output:
 
 ```text
-
+0
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +239,7 @@ Pass / Not Pass
 Did you use AI for this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, also complete:
@@ -251,7 +257,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -305,10 +311,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
