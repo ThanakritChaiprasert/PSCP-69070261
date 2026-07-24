@@ -1,9 +1,9 @@
 '''Bunny Farm'''
-xyz = input()
+xyz = input().split(' ')
 PRICE = float(input())
-x = float(xyz[:xyz.index(' ')])
-y = float(xyz[xyz.index(' ') + 1:xyz.rindex(' ')])
-z = float(xyz[xyz.rindex(' ') + 1:])
+x = float(xyz[0])
+y = float(xyz[1])
+z = float(xyz[2])
 
 LENGTH = 2 * (x + y) * z
 TOTAL = LENGTH * PRICE
