@@ -1,8 +1,8 @@
 '''Bunny Shopping'''
-xyz: float = input()
-CARROT = float(xyz[:xyz.index(' ')])
-CABBAGE = float(xyz[xyz.index(' ') + 1:xyz.rindex(' ')])
-TOMATO = float(xyz[xyz.rindex(' ') + 1:])
+xyz: float = input().split(' ')
+CARROT = float(xyz[0])
+CABBAGE = float(xyz[1])
+TOMATO = float(xyz[2])
 
 CARROT_PRICE = CARROT * 10
 CABBAGE_PRICE = CABBAGE * 25
