@@ -1,8 +1,8 @@
 '''AR Tiktok'''
-INPUT = input()
-r = int(INPUT[:INPUT.index(' ')])
-x = int(INPUT[INPUT.index(' ') + 1:INPUT.rindex(' ')])
-y = int(INPUT[INPUT.rindex(' ') + 1:])
+INPUT = input().split(' ')
+r = int(INPUT[0])
+x = int(INPUT[1])
+y = int(INPUT[2])
 CALC = (x ** 2) + (y ** 2)
 if CALC < r ** 2:
     print('IN')

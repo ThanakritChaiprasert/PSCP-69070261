@@ -1,7 +1,7 @@
 '''Pods'''
-INPUT = input()
-PASSENGERS = int(INPUT[:INPUT.index(' ')])
-LINE = int(INPUT[:INPUT.index(' '):-1])
+INPUT = input().split(' ')
+PASSENGERS = int(INPUT[0])
+LINE = int(INPUT[1])
 i = 1
 STORAGE = ''
 REMAIN = 0
