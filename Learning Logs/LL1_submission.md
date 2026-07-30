@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-3036 /  ปราสาท
+2996 /  สลับตัวอักษร
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-565989
+560534
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-15-30 minutes
+0-15 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-Theres a treasure in Room1 inside a pyramid-shaped castle. All rooms are triangle-shaped and they're stacked on top of each other to form a pyramid. Starting from each room, you have to break the walls to reach Room1. You must code a program to find the least amount of walls to break to reach Room1 from a given room.
+Reverse the 5 letter word in lowercase.
 ```
 
 ---
@@ -93,9 +93,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: Find the pattern in each room number.
-Step 2: Find the difference between odd and even numbers.
-Step 3: Set the minimum and maximum room number to separate each layer.
+Step 1: Find the length of the input to check if it fits the given condition
+Step 2: Find the easiest way to reverse letters.
+Step 3: Use the string slicing method and run the code to see if it works.
 ```
 
 ---
@@ -115,13 +115,10 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-1. Use mod to find odd or even number from the given room.
-2. Calculate minimun and maximum room number by using loop variable determined by the number of layers this pyramid has.
-3. Using the found pattern from the fewest possible broken walls from each room, I can separate how odd and even room number works.
-   Odd = +3, Even = +1, then they switch between each other and repeat. Making sure each of them have separate results.
-4. Calculate how many layers the pyramid has using the given room with minimum and maximum room number.
-5. Compare the number of layers with loop variable, ending the loop when the loop variable is more than it.
-6. If the given room number is odd, show the calculated odd value. If the given room number is even, show the calculated even value.
+1. Use len(text) to measure its length
+2. Compare the measured length to if-else condition, if its equal to 5 then run the code.
+3. Use the text.lower() feature to turn all characters into their lowercase form.
+4. Use string slicing in this format [::-1] to reverse the letters.
 ```
 
 ---
@@ -141,25 +138,25 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-To check odd room number's result
+To test if the text reversing works.
 ```
 
 Input:
 
 ```text
-11
+hi
 ```
 
 Expected output:
 
 ```text
-5
+ih
 ```
 
 Actual output:
 
 ```text
-5
+ih
 ```
 
 Result:
@@ -173,25 +170,25 @@ Pass
 Why I chose this case:
 
 ```text
-To check even room number's result
+To test if the lowercase command works.
 ```
 
 Input:
 
 ```text
-12
+AAAAAH
 ```
 
 Expected output:
 
 ```text
-6
+haaaaa
 ```
 
 Actual output:
 
 ```text
-6
+haaaaa
 ```
 
 Result:
@@ -205,25 +202,25 @@ Pass
 Why I chose this case:
 
 ```text
-To check if room number 1 has no required broken walls
+To test if both text.lowercase() and string slicing work well together.
 ```
 
 Input:
 
 ```text
-1
+Harry
 ```
 
 Expected output:
 
 ```text
-0
+yrrah
 ```
 
 Actual output:
 
 ```text
-0
+yrrah
 ```
 
 Result:

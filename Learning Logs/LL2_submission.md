@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-3036 /  ปราสาท
+3011 /  Colors
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-565989
+560757
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-15-30 minutes
+30-60 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-Theres a treasure in Room1 inside a pyramid-shaped castle. All rooms are triangle-shaped and they're stacked on top of each other to form a pyramid. Starting from each room, you have to break the walls to reach Room1. You must code a program to find the least amount of walls to break to reach Room1 from a given room.
+There are 3 primary colors to mix: Red, Yellow, and Blue. Red and Yellow makes Orange, Red and Blue makes Violet, Yellow and Blue makes Green. A color mixing with itself makes the same color, and any color outside of the given three is not allowed (Shows "Error").
 ```
 
 ---
@@ -93,9 +93,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: Find the pattern in each room number.
-Step 2: Find the difference between odd and even numbers.
-Step 3: Set the minimum and maximum room number to separate each layer.
+Step 1: Use two inputs in a if-else condition to show a new color.
+Step 2: Show "Error" when theres the input color is outsie the primary colors.
+Step 3: Same color mixing itself shows the same color.
 ```
 
 ---
@@ -115,13 +115,10 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-1. Use mod to find odd or even number from the given room.
-2. Calculate minimun and maximum room number by using loop variable determined by the number of layers this pyramid has.
-3. Using the found pattern from the fewest possible broken walls from each room, I can separate how odd and even room number works.
-   Odd = +3, Even = +1, then they switch between each other and repeat. Making sure each of them have separate results.
-4. Calculate how many layers the pyramid has using the given room with minimum and maximum room number.
-5. Compare the number of layers with loop variable, ending the loop when the loop variable is more than it.
-6. If the given room number is odd, show the calculated odd value. If the given room number is even, show the calculated even value.
+1. Combine both two input colors together in one string.
+2. Use if-else condition to check the colors that will mix. Both colors can swap the order of the input.
+3. If both colors are the same, print one of the inputted colors.
+4. If the input doesn't fit any conditions, print "Error".
 ```
 
 ---
@@ -141,25 +138,26 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-To check odd room number's result
+To test if the color mixing works.
 ```
 
 Input:
 
 ```text
-11
+Red
+Yellow
 ```
 
 Expected output:
 
 ```text
-5
+Orange
 ```
 
 Actual output:
 
 ```text
-5
+Orange
 ```
 
 Result:
@@ -173,31 +171,32 @@ Pass
 Why I chose this case:
 
 ```text
-To check even room number's result
+To check if switching color order works.
 ```
 
 Input:
 
 ```text
-12
+Yellow
+Red
 ```
 
 Expected output:
 
 ```text
-6
+Orange
 ```
 
 Actual output:
 
 ```text
-6
+Error
 ```
 
 Result:
 
 ```text
-Pass
+Fail
 ```
 
 ### Test Case 3
@@ -205,31 +204,32 @@ Pass
 Why I chose this case:
 
 ```text
-To check if room number 1 has no required broken walls
+To test if using the same colors would show the same color
 ```
 
 Input:
 
 ```text
-1
+Red
+Red
 ```
 
 Expected output:
 
 ```text
-0
+Red
 ```
 
 Actual output:
 
 ```text
-0
+Error
 ```
 
 Result:
 
 ```text
-Pass
+Fail
 ```
 
 ---
@@ -257,7 +257,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-No
+Yes
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -282,19 +282,19 @@ Not allowed:
 Who helped you?
 
 ```text
--
+friend
 ```
 
 What did they help with?
 
 ```text
--
+- hint about the approach
 ```
 
 What did you still do by yourself?
 
 ```text
--
+- figuring out what i've overlooked.
 ```
 
 Did you copy any code from another person?

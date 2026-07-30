@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-3036 /  ปราสาท
+3025 /  Season
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-565989
+563064
 ```
 
 OJ status:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-Theres a treasure in Room1 inside a pyramid-shaped castle. All rooms are triangle-shaped and they're stacked on top of each other to form a pyramid. Starting from each room, you have to break the walls to reach Room1. You must code a program to find the least amount of walls to break to reach Room1 from a given room.
+The seasons change every 21st day on each month dividable by 3. (Ex: March 20th is winter, March 21st is spring.)
 ```
 
 ---
@@ -93,9 +93,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: Find the pattern in each room number.
-Step 2: Find the difference between odd and even numbers.
-Step 3: Set the minimum and maximum room number to separate each layer.
+Step 1: Devide by 3 with the given month number.
+Step 2: Check the given day to see if its higher or lower than 21.
+Step 3: Use if-else conditions to show season.
 ```
 
 ---
@@ -115,13 +115,9 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-1. Use mod to find odd or even number from the given room.
-2. Calculate minimun and maximum room number by using loop variable determined by the number of layers this pyramid has.
-3. Using the found pattern from the fewest possible broken walls from each room, I can separate how odd and even room number works.
-   Odd = +3, Even = +1, then they switch between each other and repeat. Making sure each of them have separate results.
-4. Calculate how many layers the pyramid has using the given room with minimum and maximum room number.
-5. Compare the number of layers with loop variable, ending the loop when the loop variable is more than it.
-6. If the given room number is odd, show the calculated odd value. If the given room number is even, show the calculated even value.
+1. Input the month and date, then divide the given month by 3.
+2. Compare the division result and the given date to if-else condition
+3. Show the resulted season.
 ```
 
 ---
@@ -141,25 +137,26 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-To check odd room number's result
+To test if month dividing works.
 ```
 
 Input:
 
 ```text
-11
+6
+0
 ```
 
 Expected output:
 
 ```text
-5
+spring
 ```
 
 Actual output:
 
 ```text
-5
+spring
 ```
 
 Result:
@@ -173,25 +170,26 @@ Pass
 Why I chose this case:
 
 ```text
-To check even room number's result
+To test if seasons would change if the date is above 21
 ```
 
 Input:
 
 ```text
-12
+6
+21
 ```
 
 Expected output:
 
 ```text
-6
+summer
 ```
 
 Actual output:
 
 ```text
-6
+summer
 ```
 
 Result:
@@ -205,31 +203,32 @@ Pass
 Why I chose this case:
 
 ```text
-To check if room number 1 has no required broken walls
+To test if there are any failures in the conditions.
 ```
 
 Input:
 
 ```text
-1
+5
+21
 ```
 
 Expected output:
 
 ```text
-0
+spring
 ```
 
 Actual output:
 
 ```text
-0
+summer
 ```
 
 Result:
 
 ```text
-Pass
+Fail
 ```
 
 ---
