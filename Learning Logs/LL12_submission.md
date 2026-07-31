@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-3071 / จำนวนในช่วง [A,B] ที่หารด้วย d เหลือเศษ r
+3072 / A-E-I-O-U
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-568664
+568772
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-1-3 hours
+0-15 hours
 ```
 
 Choose one:
