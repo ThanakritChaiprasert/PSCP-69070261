@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-3025 / Season
+3042 / หาร 10
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-563064
+566054
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-15-30 minutes
+0-15 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-The seasons change every 21st day on each month dividable by 3. (Ex: March 20th is winter, March 21st is spring.)
+Find all numbers that can be divided by 10 from the input number (N to 0), and show all the numbers found.
 ```
 
 ---
@@ -93,9 +93,10 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: Devide by 3 with the given month number.
-Step 2: Check the given day to see if its higher or lower than 21.
-Step 3: Use if-else conditions to show season.
+Step 1: Use floor division with the input by 10 to exclude the decimal numbers.
+Step 2: Multiply by 10 to get the maximum number dividable by 10.
+Step 3: Put the answer in a while loop and subtract it by 10 each loop.
+Step 4: Print every resulted numbers in a single line.
 ```
 
 ---
@@ -115,9 +116,11 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-1. Input the month and date, then divide the given month by 3.
-2. Compare the division result and the given date to if-else condition
-3. Show the resulted season.
+Step 1: Use floor division with the input by 10 to exclude the decimal numbers.
+Step 2: Multiply by 10 to get the maximum number dividable by 10.
+Step 3: Put the answer in a while loop and subtract it by 10 each loop.
+Step 4: Every loop must add every detected number to a string variable.
+Step 5: Print the string variable to show every found number in order.
 ```
 
 ---
@@ -137,26 +140,31 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-To test if month dividing works.
+To check if the loop works as intended.
 ```
 
 Input:
 
 ```text
-6
-0
+30
 ```
 
 Expected output:
 
 ```text
-spring
+30
+20
+10
+0
 ```
 
 Actual output:
 
 ```text
-spring
+30
+20
+10
+0
 ```
 
 Result:
@@ -170,26 +178,25 @@ Pass
 Why I chose this case:
 
 ```text
-To test if seasons would change if the date is above 21
+To check if string addition works.
 ```
 
 Input:
 
 ```text
-6
-21
+30
 ```
 
 Expected output:
 
 ```text
-summer
+30 20 10 0
 ```
 
 Actual output:
 
 ```text
-summer
+30 20 10 0
 ```
 
 Result:
@@ -203,32 +210,31 @@ Pass
 Why I chose this case:
 
 ```text
-To test if there are any failures in the conditions.
+To check if the floor division works well with the program.
 ```
 
 Input:
 
 ```text
-5
-21
+33
 ```
 
 Expected output:
 
 ```text
-spring
+30 20 10 0
 ```
 
 Actual output:
 
 ```text
-summer
+30 20 10 0
 ```
 
 Result:
 
 ```text
-Fail
+Pass
 ```
 
 ---
